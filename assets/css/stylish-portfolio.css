@@ -401,6 +401,11 @@ a:hover, a:focus, a:active {
   text-align: justify;
 }
 
+.modal img {
+  margin: 20px; /* 원하는 마진 값으로 조정 */
+}
+
+
 .close {
   position: absolute; /* 절대 위치 설정 */
   top: 0; /* 상단에서 0px 떨어진 위치 */
