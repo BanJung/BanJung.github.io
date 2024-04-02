@@ -402,7 +402,7 @@ a:hover, a:focus, a:active {
 }
 
 .modal img {
-  margin: 20px; /* 원하는 마진 값으로 조정 */
+  margin: 10px 50px; /* 원하는 마진 값으로 조정 */
 }
 
 
