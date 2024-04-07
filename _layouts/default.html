@@ -51,25 +51,36 @@
     <script src="{{ site.baseurl }}/assets/js/stylish-portfolio.min.js"></script>
 
     <script>
-    // 모달 열기
-    var modal = document.getElementById("myModal");
-    var btn = document.getElementById("openModal");
-    btn.onclick = function() {
-      modal.style.display = "block";
+   // 모달 열기
+    var modal1 = document.getElementById("project1Modal");
+    var btn1 = document.getElementById("openProject1Modal");
+    btn1.onclick = function() {
+      modal1.style.display = "block";
+    }
+    
+    var modal3 = document.getElementById("project3Modal");
+    var btn3 = document.getElementById("openProject3Modal");
+    btn3.onclick = function() {
+      modal3.style.display = "block";
     }
     
     // 모달 닫기
-    var span = document.getElementsByClassName("close")[0];
-    span.onclick = function() {
-      modal.style.display = "none";
+    var spans = document.getElementsByClassName("close");
+    for (var i = 0; i < spans.length; i++) {
+      spans[i].onclick = function() {
+        this.parentElement.parentElement.style.display = "none";
+      }
     }
     
     // 모달 외부 클릭 시 닫기
     window.onclick = function(event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
+      if (event.target == modal1) {
+        modal1.style.display = "none";
+      } else if (event.target == modal3) {
+        modal3.style.display = "none";
       }
     }
+
     </script>
     {% include google_analytics.html %}
 </body>
