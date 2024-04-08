@@ -45,6 +45,9 @@ h6 {
   color: rgba(255, 255, 255, 0.7);
 }
 
+.text-custom {
+  font-size: smaller;
+}
 /* Map */
 .map {
   height: 30rem;
