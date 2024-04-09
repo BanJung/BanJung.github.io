@@ -63,7 +63,14 @@
     btn3.onclick = function() {
       modal3.style.display = "block";
     }
-    
+
+
+    var modal4 = document.getElementById("project4Modal");
+    var btn4 = document.getElementById("openProject4Modal");
+    btn4.onclick = function() {
+      modal4.style.display = "block";
+    }
+        
     // 모달 닫기
     var spans = document.getElementsByClassName("close");
     for (var i = 0; i < spans.length; i++) {
@@ -78,6 +85,8 @@
         modal1.style.display = "none";
       } else if (event.target == modal3) {
         modal3.style.display = "none";
+      } else if (event.target == modal4) {
+        modal4.style.display = "none";
       }
     }
 
