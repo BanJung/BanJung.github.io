@@ -76,6 +76,12 @@
     btn4.onclick = function() {
       modal4.style.display = "block";
     }
+
+    var studyModal1 = document.getElementById("study1Modal");
+    var btn10 = document.getElementById("openStudy1Modal");
+    btn10.onclick = function() {
+      studyModal1.style.display = "block";
+    }
         
     // 모달 닫기
     var spans = document.getElementsByClassName("close");
@@ -95,6 +101,8 @@
         modal3.style.display = "none";
       } else if (event.target == modal4) {
         modal4.style.display = "none";
+      } else if (event.target == studyModal1) {
+        studyModal1.style.display = "none";
       }
     }
 
